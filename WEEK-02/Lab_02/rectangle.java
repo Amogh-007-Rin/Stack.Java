@@ -10,21 +10,58 @@ public class Rectangle {
         this.v2 = v2;
     }
 
-    public double width(){
-        return this.v1.x - this.v2.x;
+    public double getWidth(){
+        return Math.abs(this.v1.x - this.v2.x);
     }
 
-    public double height(){
-        return this.v1.y - this.v2.y;
+    public double getHeight(){
+        return Math.abs(this.v1.y - this.v2.y);
     }
 
-    public double area(){
-        return this.width() * this.height();
+    public double getArea(){
+        return Math.abs(this.getWidth() * this.getHeight());
+    }
+
+    public Vector getCenter(){
+        double centerX = (this.v1.x + this.v2.x)/2;
+        double centerY = (this.v1.y + this.v2.y)/2;
+        return new Vector(centerX , centerY);
+
+    }
+
+    public boolean contains(Vector point){
+        return (point.x >= v1.x && point.x <= v2.x && point.y >= v1.y && point.y <= v2.y );
+    }
+
+    public void printRectangle(){
+        
+        this.v1.printVector("Vector 1");
+        System.out.println();
+        this.v2.printVector("Vector 2");
+        System.out.println();
+        System.out.println("Heigh of Rectangle :" + " " +getHeight());
+        System.out.println("Width of the rectangle :" + " " + getWidth());
+        System.out.println("Area of the rectangle :" + " " + getArea());
+        System.out.println("Center of the rectangle :"+ " " + getCenter());
+    }
+    @Override
+    public String toString() {
+        return "Rectangle(v1: [" + v1.x + ", " + v1.y + "], v2: [" + v2.x + ", " + v2.y + "])";
     }
 
 
-    public double center(){
-       
+    public static void main(String args[]){
+        System.out.println("-----------------Run Started-----------------");
+        Vector v1 = new Vector(1,3);
+        Vector v2 = new Vector(4,5);
+        Rectangle rect = new Rectangle(v1,v2);
+        Vector p = new Vector(2,4);
+        System.out.println("Does rectangle contains point (2,4)? : " + rect.contains(p));
+        rect.printRectangle();
+        System.out.println();
+        System.out.println("----------------Run Completed----------------");
+        System.out.println();
     }
+
 }
 
