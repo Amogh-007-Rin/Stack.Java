@@ -40,22 +40,6 @@ public class Vector {
     return "Vector(x: " + getX() + ", y: " + getY() + ")";
     }
     public static void main(String[] args) {
-        Vector v1 = new Vector(3, 4);
-        Vector v2 = new Vector(1, 2);
-        System.out.println();
-        System.out.println("-------------------------------Run Start-------------------------------");
-        v1.printVector("Vector 1 :");
-        System.out.println();
-        v2.printVector("Vector 2 :");
-        System.out.println();
-        Vector v3 = v1.add(v2);
-        v3.printVector("Vector 3 :");
-        System.out.println();
-        Vector v4 = v1.subtract(v2);
-        v4.printVector("Vector 4 :");
-        System.out.println();
-        Vector v5 = v1.scale(2);
-        v5.printVector("Vector 5 :");
-        System.out.println("-------------------------------Run Start-------------------------------");
+        // Executed tests and recorded the outputs in ShapesMain.java files
     }
 }

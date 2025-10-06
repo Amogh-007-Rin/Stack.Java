@@ -1,4 +1,6 @@
+
 import java.util.*;
+
 
 public class Rectangle {
     Vector v1;
@@ -51,16 +53,7 @@ public class Rectangle {
 
 
     public static void main(String args[]){
-        System.out.println("-----------------Run Started-----------------");
-        Vector v1 = new Vector(1,3);
-        Vector v2 = new Vector(4,5);
-        Rectangle rect = new Rectangle(v1,v2);
-        Vector p = new Vector(2,4);
-        System.out.println("Does rectangle contains point (2,4)? : " + rect.contains(p));
-        rect.printRectangle();
-        System.out.println();
-        System.out.println("----------------Run Completed----------------");
-        System.out.println();
+       // Executed tests and recorded the outputs in ShapesMain.java files
     }
 
 }

@@ -35,18 +35,6 @@ public class Circle {
     return "Circle(center: [" + center.x + ", " + center.y + "], radius: " + radius + ")";
     }
     public static void main(String args[]){
-        Vector v1 = new Vector(1,3);
-        Circle c1 = new Circle(v1,5);
-        System.out.println("---------------------Run Start----------------------");
-        System.out.println();
-        System.out.println(c1);
-        System.out.println();
-        System.out.println("Area: " + c1.getArea());
-        System.out.println();
-        System.out.println("Diameter: " + c1.getDiameter());
-        System.out.println();
-        System.out.println(c1.boundingBox());
-        System.out.println();
-        System.out.println("----------------------Run End------------------------");
+       // Executed tests and recorded the outputs in ShapesMain.java files
     }
     }
