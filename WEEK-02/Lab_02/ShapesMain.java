@@ -1,6 +1,16 @@
+// StudentName : Amogh Dath Kalasapura Arunkumar
+// StudentId : 24168333
+// StudentEmail : amoghdath.kalasapuraarunkumar@mail.bcu.ac.uk
+
+// ShapesMain.java is a driver file to run tests and get the output 
+
+
 public class ShapesMain {
-    
+      
     public static void main(String args[]){
+        
+        // Vector outputs
+        
         Vector v1 = new Vector(3, 4);
         Vector v2 = new Vector(1, 2);
         System.out.println();
