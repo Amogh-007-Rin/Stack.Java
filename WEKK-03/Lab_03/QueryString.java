@@ -6,7 +6,7 @@
 public class QueryString {
     String data;
 
-    QueryString(String data) {
+    public QueryString(String data) {
         this.data = data;
     }
 

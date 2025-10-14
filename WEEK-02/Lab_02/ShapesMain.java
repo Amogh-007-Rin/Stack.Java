@@ -29,7 +29,7 @@ public class ShapesMain {
         v5.printVector("Vector 5 :");
         Vector v6 = v2.scale(3);
         v6.printVector("Vector 6 :");
-        System.out.println("-------------------------------Run Start-------------------------------");
+        System.out.println("-------------------------------Run End-------------------------------");
 
 
         // Rectangle outputs
@@ -47,7 +47,7 @@ public class ShapesMain {
         System.out.println();
     
 
-        // Circle output
+        // Circle outputs
 
         Vector r1 = new Vector(1,3);
         Circle c1 = new Circle(r1,5);

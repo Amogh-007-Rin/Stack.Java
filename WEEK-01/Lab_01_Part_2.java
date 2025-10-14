@@ -48,7 +48,7 @@ public class Lab_01_Part_2 {
                 System.out.println("Invalid age!");
             } else if (age < 3) {
                 System.out.println("You are an infant.");
-            } else if (age >= 3 && age <= 5) {
+            } else if (age <= 5) {
                 System.out.println("You are a toddler.");
             } else if (age >= 5 && age < 12) {
                 System.out.println("You are a child.");
@@ -110,7 +110,7 @@ public class Lab_01_Part_2 {
         // FreshPrince.run();
         // AgeChecker.run();
         // WhileLoopExample.run();
-        TenGreenBottles.run();
+        // TenGreenBottles.run();
     }
 }
 
