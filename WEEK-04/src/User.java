@@ -1,8 +1,12 @@
+// StudentName : Amogh Dath Kalasapura Arunkumar
+// StudentId : 24168333
+// StudentEmail : amoghdath.kalasapuraarunkumar@mail.bcu.ac.uk
+
 package src;
 
 public class User {
-    private final String username;
-    private String password;
+    public final String username;
+    public String password;
 
     public User(String username, String password){
         this.username = username;
