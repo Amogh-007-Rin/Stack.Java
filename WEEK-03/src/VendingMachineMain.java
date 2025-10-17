@@ -22,13 +22,10 @@ public class VendingMachineMain{
         System.out.println();
         
         // inserting the coins into vending machine
-        int i;
-        for(i = 0;  i<10; i++ ){
-          v1.insertCoin();
-        }
+        v1.insertCoin(10);
        
-        System.out.println(" Balance after inserting " + i + " Coins : " + v1.getBalance());
-        System.out.println(" Revenue after inserting " + i + " Coins : " + v1.getRevenue());
+        System.out.println(" Balance after inserting Coins : " + v1.getBalance());
+        System.out.println(" Revenue after inserting Coins : " + v1.getRevenue());
         System.out.println();
         System.out.println("Inserting a coin to the vending machine increases the balance and the revenue remains the same");
         System.out.println();
@@ -40,9 +37,7 @@ public class VendingMachineMain{
         // Vending Candy Bar function checking
         
         System.out.println(v1.vendCandyBar());
-        v1.insertCoin();
-        v1.insertCoin();
-        v1.insertCoin();
+        v1.insertCoin(3);
         System.out.println(v1.vendCandyBar());
 
         

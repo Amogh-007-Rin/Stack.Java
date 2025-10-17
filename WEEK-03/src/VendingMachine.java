@@ -23,10 +23,13 @@ public class VendingMachine{
         return revenue;
     }
     
-    // INSERTS A COIN INTO VENDING MACHINE
-    void insertCoin() {
-        balance++;
+    // INSERTS ANY NUMBER OF COIN INTO VENDING MACHINE
+
+    void insertCoin(int coin) {
+        balance += coin;
     }
+
+    int coins = balance;
     
     // INICIATES THE REFUND OF THE ENTIRE BALANCE LEFT IN THE VENDING MACHINE
     int refund() {
