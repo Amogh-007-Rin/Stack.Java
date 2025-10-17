@@ -1,4 +1,9 @@
+package Lab_03;
+// NAME : AMOGH DATH KALASAPURA
+// STUDENT ID : 24168333
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;    
     
 public class VendingMachineTest {

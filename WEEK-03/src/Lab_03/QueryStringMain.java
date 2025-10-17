@@ -1,3 +1,7 @@
+package Lab_03;
+// NAME : AMOGH DATH KALASAPURA
+// STUDENT ID : 24168333
+
 // Manual testing for quary string
 
 public class QueryStringMain {

@@ -1,3 +1,7 @@
+package Lab_03;
+// NAME : AMOGH DATH KALASAPURA
+// STUDENT ID : 24168333
+
 public class VendingMachine{
     static final int CANDY_PRICE = 3;
     static final int CANDY_CAPACITY = 20;

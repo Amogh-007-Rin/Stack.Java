@@ -1,4 +1,10 @@
+package Lab_03;
+// NAME : AMOGH DATH KALASAPURA
+// STUDENT ID : 24168333
+
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class QueryStringTest {
@@ -6,15 +12,17 @@ public class QueryStringTest {
     @Test
     public void testGetParameterBasic() {
         // Input: Query string with basic name-value pairs
-        QueryString qs = new QueryString("name=John&age=25");
+        QueryString qs = new QueryString("name=John&age=25&country=UK");
         
         // Action: Retrieve parameter values
         String nameValue = qs.getParameter("name");
         String ageValue = qs.getParameter("age");
+        String countryValue = qs.getParameter("country");
         
         // Expected: Parameters should match input values
         assertEquals("John", nameValue);
         assertEquals("25", ageValue);
+        assertEquals("UK", countryValue);
     }
 
     @Test
@@ -24,9 +32,13 @@ public class QueryStringTest {
         
         // Action: Try to retrieve non-existent parameter
         String result = qs.getParameter("email");
+        String resultA = qs.getParameter("occupation");
+        String resultB = qs.getParameter("phone");
         
         // Expected: Should return null for non-existent parameter
         assertNull(result);
+        assertNull(resultA);
+        assertNull(resultB);
     }
 
     @Test

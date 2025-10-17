@@ -1,4 +1,6 @@
-
+package Lab_03;
+// NAME : AMOGH DATH KALASAPURA
+// STUDENT ID : 24168333
 /*
  * Represents a query string, such as "foo=bar&baz=1234".
  * See https://en.wikipedia.org/wiki/Query_string
