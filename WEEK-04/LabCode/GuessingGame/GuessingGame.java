@@ -110,7 +110,7 @@ public class GuessingGame {
             System.out.println("2. See whether or not the game is over");
             System.out.println("3. See whether or not the game has been won");
             System.out.println("4. Make a guess");
-            System.out.println("0. Exit");
+            System.out.println("5. Exit");
             System.out.print("Option: ");
 
             int option;
@@ -135,7 +135,7 @@ public class GuessingGame {
                 case 4:
                     game.guess(sc);
                     break;
-                case 0:
+                case 5:
                     exit = true;
                     System.out.println("Exiting game. Goodbye.");
                     break;
