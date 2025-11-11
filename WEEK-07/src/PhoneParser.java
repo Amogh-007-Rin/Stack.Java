@@ -13,7 +13,7 @@ public class PhoneParser {
      * The model name is encoded with underscores instead of spaces.
      */
     public static Phone parse(String data) {
-        // TODO: parse the phone data string, and return a Phone object.
+        // Todo: parse the phone data string, and return a Phone object.
         // you may use string manipulation, a regex, or a Scanner
         if (data == null) {
             throw new IllegalArgumentException("input data is null");
@@ -42,13 +42,13 @@ public class PhoneParser {
      * Returns a PhoneList by parsing a text file containing the phone data.
      */
     public static PhoneList parseFile(String filename) throws IOException {
-        // TODO: create a PhoneList
+        // Todo: create a PhoneList
         PhoneList list = new PhoneList();
         
-        // TODO: create a BufferedReader to read from the file
+        // Todo: create a BufferedReader to read from the file
         Path path = Paths.get(filename);
         try (BufferedReader br = Files.newBufferedReader(path)) {
-            // TODO: for each line, parse it as a Phone and add it to the list 
+            // Todo: for each line, parse it as a Phone and add it to the list 
             String line;
             while ((line = br.readLine()) != null) {
                 line = line.trim();

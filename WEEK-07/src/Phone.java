@@ -4,7 +4,7 @@ public class Phone {
     private final int batteryCapacity;
     
     public Phone(String model, double screenSize, int batteryCapacity) {
-        // TODO: ensure the screenSize and batteryCapacity are positive
+        // Todo: ensure the screenSize and batteryCapacity are positive
         // by throwing an IllegalArgumentException otherwise
         
         if (screenSize <= 0.0) {
@@ -46,7 +46,7 @@ public class Phone {
      * other criterion.
      */
     public boolean dominates(Phone other) {
-        // TODO: implement this method
+        // Todo: implement this method
         // dominates if strictly better in one metric and >= in the other
         boolean strictlyBetterInScreen = this.screenSize > other.screenSize;
         boolean strictlyBetterInBattery = this.batteryCapacity > other.batteryCapacity;
