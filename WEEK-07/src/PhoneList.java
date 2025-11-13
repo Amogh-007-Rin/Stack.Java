@@ -1,5 +1,10 @@
+// Student : Amogh Dath Kalasapura Arunkumar
+// Student id : 24168333
+// Student Email : amoghdath.kalasapuraarunkumar@mail.bcu.ac.uk
+
 import java.util.*;
 
+// Implimented the PhoneList class and completed all the mentioned TODOs
 public class PhoneList {
     private final List<Phone> allPhones = new ArrayList<>();
     private final Set<Phone> bestPhones = new HashSet<>();

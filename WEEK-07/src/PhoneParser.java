@@ -1,9 +1,14 @@
+// Student : Amogh Dath Kalasapura Arunkumar
+// Student id : 24168333
+// Student Email : amoghdath.kalasapuraarunkumar@mail.bcu.ac.uk
+
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
 
+// Implimented the PhoneParser class and completed all the mentioned Todos
 public class PhoneParser {
     /*
      * Parses a phone data string, in the following format:

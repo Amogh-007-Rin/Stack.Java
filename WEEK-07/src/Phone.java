@@ -1,3 +1,9 @@
+// Student : Amogh Dath Kalasapura Arunkumar
+// Student id : 24168333
+// Student Email : amoghdath.kalasapuraarunkumar@mail.bcu.ac.uk
+
+
+// Implimented the mentioned todo sections of the Phone class
 public class Phone {
     private final String model;
     private final double screenSize;
@@ -8,10 +14,10 @@ public class Phone {
         // by throwing an IllegalArgumentException otherwise
         
         if (screenSize <= 0.0) {
-            throw new IllegalArgumentException("screenSize must be positive");
+            throw new IllegalArgumentException("Condition : screenSize must be positive");
         }
         if (batteryCapacity <= 0) {
-            throw new IllegalArgumentException("batteryCapacity must be positive");
+            throw new IllegalArgumentException("Condition : batteryCapacity must be positive");
         }
         
         this.model = model;
