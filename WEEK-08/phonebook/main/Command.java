@@ -1,5 +1,5 @@
-package bcu.changeme.phonebook.main;
-import bcu.changeme.phonebook.model.*;
+package phonebook.main;
+import phonebook.model.*;
 
 /**
  * @author id124659

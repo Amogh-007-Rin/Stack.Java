@@ -1,6 +1,6 @@
-package bcu.changeme.phonebook.main;
+package phonebook.main;
 
-import bcu.changeme.phonebook.model.*;
+import phonebook.model.*;
 
 public class AddCommand implements Command {
     private final String name;
