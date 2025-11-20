@@ -1,7 +1,5 @@
 package phonebook.main;
-
 import phonebook.model.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -57,38 +55,67 @@ public class Main {
 		}
 	}
 	
+	public static Command parse(String command) throws InvalidCommandException {
+        String[] parts = command.trim().split("\\s+");
+        if (parts.length == 0 || parts[0].isEmpty()) {
+            throw new InvalidCommandException("No command entered.");
+        }
+        switch (parts[0].toLowerCase()) {
+            case "add":
+                return new AddCommand(parts);
+            case "show":
+                return new ShowCommand(parts);
+            case "update":
+                return new UpdateCommand(parts);
+            case "remove":
+                return new RemoveCommand(parts);
+            case "list":
+                return new ListCommand(parts);
+            case "help":
+                return new HelpCommand(parts);
+            default:
+                throw new InvalidCommandException("Unknown command: " + parts[0]);
+        }
+    }
+	
+	public static void parseAndExecute(String command, phonebook.model.PhoneBook phoneBook)
+            throws InvalidCommandException, phonebook.model.AlreadyPresentException, phonebook.model.NotPresentException {
+        Command cmd = parse(command);
+        cmd.execute(phoneBook);
+    }
+	
 	public void parseAndExecute(String command) throws AlreadyPresentException, NotPresentException, InvalidCommandException {
 		String[] parts = command.split(" ");
 		String firstPart = parts[0];
 		
 		if("add".equalsIgnoreCase(firstPart)) {
 			if(parts.length != 3) {
-				throw new InvalidCommandException();
+				throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 			}
 			phoneBook.addEntry(parts[1], parts[2]);
 			System.out.println("Entry added.");
 		} else if("show".equalsIgnoreCase(firstPart)) {
 			if(parts.length != 2) {
-				throw new InvalidCommandException();
+				throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 			}
 			PhoneBookEntry entry = phoneBook.getEntry(parts[1]);
 			System.out.println("Name: " + entry.getName());
 			System.out.println("Phone number: " + entry.getPhoneNumber());
 		} else if("update".equalsIgnoreCase(firstPart)) {
 			if(parts.length != 3) {
-				throw new InvalidCommandException();
+				throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 			}
 			phoneBook.updateEntry(parts[1], parts[2]);
 			System.out.println("Entry updated.");
 		} else if("remove".equalsIgnoreCase(firstPart)) {
 			if(parts.length != 2) {
-				throw new InvalidCommandException();
+				throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 			}
 			phoneBook.removeEntry(parts[1]);
 			System.out.println("Entry removed.");
 		} else if("list".equalsIgnoreCase(firstPart)) {
 			if(parts.length != 1) {
-				throw new InvalidCommandException();
+				throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 			}
 			List<String> names = phoneBook.getAllNames();
 			if(names.isEmpty()) {
@@ -100,11 +127,11 @@ public class Main {
 			}
 		} else if("help".equalsIgnoreCase(firstPart)) {
 			if(parts.length != 1) {
-				throw new InvalidCommandException();
+				throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 			}
 			System.out.println(HELP_MESSAGE);
 		} else {
-			throw new InvalidCommandException();
+			throw new InvalidCommandException("Invalid command. Type help command to get list of executable commands");
 		}
 	}
 }

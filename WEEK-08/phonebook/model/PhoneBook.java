@@ -69,4 +69,7 @@ public class PhoneBook {
 			throw new NotPresentException(key);
 		}
 	}
+	public List<PhoneBookEntry> getEntries() {
+		return new ArrayList<>(entries.values());
+	}
 }

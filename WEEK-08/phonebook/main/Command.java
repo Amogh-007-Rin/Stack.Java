@@ -1,12 +1,13 @@
 package phonebook.main;
-import phonebook.model.*;
+
+import phonebook.model.PhoneBook;
+import phonebook.model.AlreadyPresentException;
+import phonebook.model.NotPresentException;
 
 /**
- * @author id124659
+ * @author 24168333
  *
  */ 
 public interface Command {
-	public void execute (PhoneBook phoneBook) 
-			throws AlreadyPresentException, NotPresentException;
-	
+    void execute(PhoneBook phoneBook) throws AlreadyPresentException, NotPresentException;
 }

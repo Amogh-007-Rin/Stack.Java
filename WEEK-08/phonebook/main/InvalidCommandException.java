@@ -3,5 +3,8 @@ package phonebook.main;
 /*
  * This exception is thrown when failing to parse a command.
  */
-public class InvalidCommandException extends Exception {}
- 
+public class InvalidCommandException extends Exception {
+    public InvalidCommandException(String message) {
+        super(message);
+    }
+}
