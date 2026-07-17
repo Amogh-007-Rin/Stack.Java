@@ -1,0 +1,32 @@
+public class DeadlockFix {
+    private static final Object LOCK_A = new Object();
+    private static final Object LOCK_B = new Object();
+
+    public static void main(String[] args) {
+        // Both threads acquire locks in the same order (LOCK_A then LOCK_B)
+        Thread t1 = new Thread(() -> {
+            synchronized (LOCK_A) {
+                System.out.println("Thread 1: holding LOCK_A");
+                try { Thread.sleep(100); } catch (InterruptedException e) {}
+                synchronized (LOCK_B) {
+                    System.out.println("Thread 1: holding LOCK_A and LOCK_B");
+                }
+            }
+        });
+
+        Thread t2 = new Thread(() -> {
+            synchronized (LOCK_A) {
+                System.out.println("Thread 2: holding LOCK_A");
+                try { Thread.sleep(100); } catch (InterruptedException e) {}
+                synchronized (LOCK_B) {
+                    System.out.println("Thread 2: holding LOCK_A and LOCK_B");
+                }
+            }
+        });
+
+        t1.start();
+        t2.start();
+
+        System.out.println("No deadlock: threads finish successfully.");
+    }
+}
