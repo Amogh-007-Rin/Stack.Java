@@ -1,0 +1,12 @@
+Exercise 5 Answer
+=================
+Maven uses XML (pom.xml) with a strict lifecycle, making it predictable and widely adopted in enterprise environments. Gradle uses a Groovy or Kotlin DSL (build.gradle), offers incremental builds and a build cache for better performance, and is more flexible.
+
+For a new project, I would choose Gradle because:
+1. Faster builds (incremental compilation, build cache)
+2. More concise and readable configuration
+3. Better dependency management (implementation/api separation)
+4. Dominant in the Android ecosystem and gaining in Java
+5. Kotlin DSL provides type safety in modern IDEs
+
+However, for a traditional enterprise environment with existing Maven infrastructure and conventions, Maven remains a solid choice.

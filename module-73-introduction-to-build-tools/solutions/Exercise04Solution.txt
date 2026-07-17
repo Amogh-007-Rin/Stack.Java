@@ -1,0 +1,14 @@
+Exercise 4 Answer
+=================
+Maven dependency scopes:
+
+- compile (default): Available at compile time and runtime. Used for libraries your code directly depends on (e.g., a logging framework).
+
+- test: Available only during test compilation and execution. Not packaged with the final artifact. Used for testing libraries (e.g., JUnit, Mockito).
+
+- runtime: Not needed at compile time but required at runtime. Used for JDBC drivers, which your code references through the DriverManager API (e.g., H2, PostgreSQL driver).
+
+Example:
+  - compile: org.apache.commons:commons-lang3 (used directly in code)
+  - test: org.junit.jupiter:junit-jupiter (only needed for tests)
+  - runtime: com.h2database:h2 (referenced only via JDBC URL, not imported in code)

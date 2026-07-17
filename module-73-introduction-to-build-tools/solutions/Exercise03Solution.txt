@@ -1,0 +1,9 @@
+Exercise 3 Answer
+=================
+Correct order:
+1. validate
+2. compile
+3. test
+4. package
+5. install
+6. deploy

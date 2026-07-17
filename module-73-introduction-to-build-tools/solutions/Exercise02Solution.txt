@@ -1,0 +1,15 @@
+Exercise 2 Answer
+=================
+Equivalent build.gradle:
+
+    plugins {
+        id 'java'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.apache.commons:commons-lang3:3.12.0'
+    }

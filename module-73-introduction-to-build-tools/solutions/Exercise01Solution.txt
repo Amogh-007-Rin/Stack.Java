@@ -1,0 +1,6 @@
+Exercise 1 Answer
+=================
+- groupId: org.myorg
+- artifactId: utility-lib
+- version: 2.1
+- dependency: org.apache.commons:commons-lang3:3.12.0
