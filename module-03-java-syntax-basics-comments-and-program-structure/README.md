@@ -15,7 +15,7 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- Completion of [Module 2: Your First Java Program](../module-2-your-first-java-program/README.md)
+- Completion of [Module 02: Your First Java Program](../module-02-your-first-java-program/README.md)
 - Familiarity with the `main` method and `System.out.println`
 
 ## Theory
@@ -206,8 +206,8 @@ Blocks can be nested. Variables declared inside a block are only visible within 
 
 ## Next Module
 
-Proceed to [Module 4: Variables and Primitive Data Types](../module-4-variables-and-primitive-data-types/README.md).
+Proceed to [Module 04: Variables and Primitive Data Types](../module-04-variables-and-primitive-data-types/README.md).
 
 ### Previous Module
 
-Return to [Module 2: Your First Java Program](../module-2-your-first-java-program/README.md).
+Return to [Module 02: Your First Java Program](../module-02-your-first-java-program/README.md).

@@ -16,7 +16,7 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- Completion of [Module 0: Introduction to Java](../module-0-introduction-to-java/README.md)
+- Completion of [Module 00: Introduction to Java](../module-00-introduction-to-java/README.md)
 - Administrative/sudo access on your machine (for installation)
 - A terminal or command prompt
 
@@ -120,7 +120,7 @@ See the following files in the `examples/` directory:
 
 1. **Verify your installation.** Run `java -version` and `javac -version` from your terminal. Write down the exact output. If either command fails, install the JDK using the instructions above.
 
-2. **Compile and run CompileTest.** Navigate to `module-1-setting-up-your-environment/examples/`, compile `CompileTest.java` using `javac`, and run it with `java`. Take a screenshot of the terminal output (or copy the text into a file).
+2. **Compile and run CompileTest.** Navigate to `module-01-setting-up-your-environment/examples/`, compile `CompileTest.java` using `javac`, and run it with `java`. Take a screenshot of the terminal output (or copy the text into a file).
 
 3. **Set JAVA_HOME.** Determine where your JDK is installed (`which javac` on Linux/macOS, `where javac` on Windows). Set `JAVA_HOME` to that directory and verify with `echo $JAVA_HOME` (Linux/macOS) or `echo %JAVA_HOME%` (Windows). Write a one-paragraph explanation of why `JAVA_HOME` matters for Java development.
 
@@ -169,8 +169,8 @@ See the following files in the `examples/` directory:
 
 ## Next Module
 
-Proceed to [Module 2: Your First Java Program](../module-2-your-first-java-program/README.md) to write your first real Java program.
+Proceed to [Module 02: Your First Java Program](../module-02-your-first-java-program/README.md) to write your first real Java program.
 
 ### Previous Module
 
-Return to [Module 0: Introduction to Java](../module-0-introduction-to-java/README.md).
+Return to [Module 00: Introduction to Java](../module-00-introduction-to-java/README.md).

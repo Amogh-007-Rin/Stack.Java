@@ -15,8 +15,8 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- Completion of [Module 0: Introduction to Java](../module-0-introduction-to-java/README.md)
-- Completion of [Module 1: Setting Up Your Environment](../module-1-setting-up-your-environment/README.md)
+- Completion of [Module 00: Introduction to Java](../module-00-introduction-to-java/README.md)
+- Completion of [Module 01: Setting Up Your Environment](../module-01-setting-up-your-environment/README.md)
 - A working JDK installation verified with `javac -version`
 
 ## Theory
@@ -165,8 +165,8 @@ The type is on the left (`String`), the name is `greeting`, and the value is ass
 
 ## Next Module
 
-Proceed to [Module 3: Java Syntax Basics — Comments and Program Structure](../module-3-java-syntax-basics-comments-and-program-structure/README.md).
+Proceed to [Module 03: Java Syntax Basics — Comments and Program Structure](../module-03-java-syntax-basics-comments-and-program-structure/README.md).
 
 ### Previous Module
 
-Return to [Module 1: Setting Up Your Environment](../module-1-setting-up-your-environment/README.md).
+Return to [Module 01: Setting Up Your Environment](../module-01-setting-up-your-environment/README.md).

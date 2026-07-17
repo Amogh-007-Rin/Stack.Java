@@ -168,4 +168,4 @@ See `examples/HelloWorld.java` for a minimal Java program.
 
 ## Next Module
 
-Proceed to [Module 1: Setting Up Your Environment](../module-1-setting-up-your-environment/README.md) to install Java on your machine.
+Proceed to [Module 01: Setting Up Your Environment](../module-01-setting-up-your-environment/README.md) to install Java on your machine.

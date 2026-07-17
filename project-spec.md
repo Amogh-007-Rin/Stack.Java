@@ -36,7 +36,7 @@ use a language feature in module 12 that isn't introduced until module 40).
 Stack.Java/
 ├── README.md                     # Top-level landing page (see Section 6)
 ├── LICENSE                       # MIT License
-├── module-0-introduction-to-java/
+├── module-00-introduction-to-java/
 │   ├── README.md
 │   ├── examples/
 │   │   └── *.java
@@ -44,12 +44,12 @@ Stack.Java/
 │   │   └── README.md             # exercise prompts (see Section 5.5)
 │   └── solutions/
 │       └── *.java
-├── module-1-setting-up-your-environment/
+├── module-01-setting-up-your-environment/
 │   ├── README.md
 │   ├── examples/
 │   ├── exercises/
 │   └── solutions/
-├── module-2-your-first-java-program/
+├── module-02-your-first-java-program/
 │   └── ...
 ...
 ├── module-100-capstone-part-2-final-project-and-next-steps/
