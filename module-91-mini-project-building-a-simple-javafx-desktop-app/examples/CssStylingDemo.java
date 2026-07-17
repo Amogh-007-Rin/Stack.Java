@@ -1,0 +1,52 @@
+public class CssStylingDemo {
+    public static void main(String[] args) {
+        System.out.println("=== JavaFX CSS Styling ===");
+        System.out.println("JavaFX uses CSS for styling (similar to web CSS).");
+        System.out.println();
+        System.out.println("Example stylesheet (todo-style.css):");
+        System.out.println();
+        System.out.println("/* Root container */");
+        System.out.println(".root {");
+        System.out.println("    -fx-padding: 20;");
+        System.out.println("    -fx-font-family: 'Segoe UI', Arial, sans-serif;");
+        System.out.println("}");
+        System.out.println();
+        System.out.println("/* Header label */");
+        System.out.println("#headerLabel {");
+        System.out.println("    -fx-font-size: 24px;");
+        System.out.println("    -fx-font-weight: bold;");
+        System.out.println("    -fx-text-fill: #2c3e50;");
+        System.out.println("}");
+        System.out.println();
+        System.out.println("/* Task input field */");
+        System.out.println("#taskInput {");
+        System.out.println("    -fx-pref-width: 300px;");
+        System.out.println("    -fx-padding: 8 12;");
+        System.out.println("    -fx-border-color: #bdc3c7;");
+        System.out.println("    -fx-border-radius: 4;");
+        System.out.println("}");
+        System.out.println();
+        System.out.println("/* Buttons */");
+        System.out.println(".button {");
+        System.out.println("    -fx-background-color: #3498db;");
+        System.out.println("    -fx-text-fill: white;");
+        System.out.println("    -fx-padding: 8 16;");
+        System.out.println("    -fx-border-radius: 4;");
+        System.out.println("}");
+        System.out.println();
+        System.out.println(".button:hover {");
+        System.out.println("    -fx-background-color: #2980b9;");
+        System.out.println("}");
+        System.out.println();
+        System.out.println("/* Completed tasks */");
+        System.out.println(".completed-task {");
+        System.out.println("    -fx-text-fill: #7f8c8d;");
+        System.out.println("    -fx-strikethrough: true;");
+        System.out.println("}");
+        System.out.println();
+        System.out.println("Key differences from web CSS:");
+        System.out.println("- Properties use -fx- prefix");
+        System.out.println("- Selectors work on #id, .class, element type");
+        System.out.println("- Use setId() and getStyleClass().add() in Java code");
+    }
+}

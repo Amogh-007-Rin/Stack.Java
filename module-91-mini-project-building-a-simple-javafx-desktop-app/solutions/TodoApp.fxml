@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="10" styleClass="root"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="TodoController">
+    <Label text="To-Do List Manager" styleClass="header" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="taskInput" promptText="Enter a new task..." HBox.hgrow="ALWAYS" />
+        <Button text="Add" onAction="#handleAdd" styleClass="add-button" />
+    </HBox>
+
+    <ListView fx:id="taskList" VBox.vgrow="ALWAYS" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label fx:id="statsLabel" text="Total: 0 | Completed: 0" styleClass="stats" />
+        <Button text="Delete Selected" onAction="#handleDelete" styleClass="delete-button" />
+        <Button text="Clear Completed" onAction="#handleClearCompleted" styleClass="clear-button" />
+    </HBox>
+</VBox>
