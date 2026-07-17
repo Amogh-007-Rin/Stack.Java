@@ -1,0 +1,37 @@
+.root {
+    -fx-padding: 30;
+    -fx-background-color: linear-gradient(to bottom, #667eea, #764ba2);
+    -fx-alignment: center;
+}
+
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.text-field, .password-field {
+    -fx-pref-width: 280px;
+    -fx-font-size: 13px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+}
+
+.register-button {
+    -fx-pref-width: 280px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+}
+
+.register-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.message {
+    -fx-font-size: 13px;
+    -fx-text-fill: white;
+}

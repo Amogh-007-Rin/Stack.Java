@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" styleClass="root"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Exercise2SolutionController">
+    <Label text="Contacts" styleClass="title" />
+    <ListView fx:id="contactList" prefHeight="150" prefWidth="280" />
+    <VBox alignment="CENTER_LEFT" spacing="5" style="-fx-padding: 10; -fx-background-color: #ffffff; -fx-background-radius: 5;">
+        <Label text="Contact Details" style="-fx-font-weight: bold; -fx-font-size: 14px;" />
+        <Label fx:id="nameLabel" text="Name: " />
+        <Label fx:id="phoneLabel" text="Phone: " />
+        <Label fx:id="emailLabel" text="Email: " />
+    </VBox>
+</VBox>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15" styleClass="root"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Exercise5SolutionController">
+    <Label text="Theme Switcher Demo" styleClass="heading" />
+    <TextField promptText="Type something..." styleClass="input" />
+    <Label text="This is a sample label to demonstrate theme changes." styleClass="description" />
+    <Button text="Dark Theme" onAction="#applyDarkTheme" styleClass="theme-button" />
+    <Button text="Light Theme" onAction="#applyLightTheme" styleClass="theme-button" />
+</VBox>

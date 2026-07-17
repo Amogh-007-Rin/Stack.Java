@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" styleClass="root"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Exercise3SolutionController">
+    <TextField fx:id="display" editable="false" styleClass="display" />
+    <GridPane hgap="5" vgap="5" styleClass="button-grid">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="25" />
+            <ColumnConstraints percentWidth="25" />
+            <ColumnConstraints percentWidth="25" />
+            <ColumnConstraints percentWidth="25" />
+        </columnConstraints>
+        <Button text="7" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <Button text="8" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+        <Button text="9" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="0" GridPane.columnIndex="2" />
+        <Button text="/" styleClass="operator-button" onAction="#handleOperator" GridPane.rowIndex="0" GridPane.columnIndex="3" />
+        <Button text="4" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <Button text="5" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <Button text="6" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+        <Button text="*" styleClass="operator-button" onAction="#handleOperator" GridPane.rowIndex="1" GridPane.columnIndex="3" />
+        <Button text="1" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <Button text="2" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        <Button text="3" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+        <Button text="-" styleClass="operator-button" onAction="#handleOperator" GridPane.rowIndex="2" GridPane.columnIndex="3" />
+        <Button text="C" styleClass="clear-button" onAction="#handleClear" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <Button text="0" styleClass="number-button" onAction="#handleDigit" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+        <Button text="=" styleClass="equals-button" onAction="#handleEquals" GridPane.rowIndex="3" GridPane.columnIndex="2" />
+        <Button text="+" styleClass="operator-button" onAction="#handleOperator" GridPane.rowIndex="3" GridPane.columnIndex="3" />
+    </GridPane>
+</VBox>

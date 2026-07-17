@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox alignment="CENTER" spacing="10" styleClass="card"
+      xmlns:fx="http://javafx.com/fxml">
+    <Rectangle width="100" height="100" arcWidth="20" arcHeight="20"
+               styleClass="avatar" />
+    <Label text="Jane Doe" styleClass="name" />
+    <Label text="Software Engineer" styleClass="title-label" />
+    <TextArea editable="false" text="Passionate Java developer with 5 years of experience building enterprise applications. Loves open source and mentoring." styleClass="bio" wrapText="true" prefRowCount="4" />
+</VBox>

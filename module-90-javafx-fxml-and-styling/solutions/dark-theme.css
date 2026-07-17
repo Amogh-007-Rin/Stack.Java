@@ -1,0 +1,38 @@
+.root {
+    -fx-padding: 30;
+    -fx-background-color: #1a1a2e;
+    -fx-alignment: center;
+}
+
+.heading {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e0e0e0;
+}
+
+.input {
+    -fx-pref-width: 280px;
+    -fx-font-size: 13px;
+    -fx-padding: 8px;
+    -fx-background-color: #16213e;
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: #888;
+}
+
+.description {
+    -fx-font-size: 12px;
+    -fx-text-fill: #aaa;
+}
+
+.theme-button {
+    -fx-pref-width: 200px;
+    -fx-font-size: 13px;
+    -fx-padding: 8px;
+    -fx-background-color: #e94560;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+}
+
+.theme-button:hover {
+    -fx-background-color: #c0392b;
+}
